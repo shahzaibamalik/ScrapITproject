@@ -13,16 +13,16 @@
         <activity android:name=".AD_AddSC" />
         <activity android:name=".SC_Register" />
         <activity android:name=".SellAppointment">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".RateList" />
-        <activity android:name=".UserDashboard" />
+        <activity android:name=".UserDashboard" ></activity>
         <activity android:name=".RegisterUser" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" ><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>

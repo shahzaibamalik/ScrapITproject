@@ -67,7 +67,7 @@ public class RateListAdapter implements ListAdapter {
         LayoutInflater inflater = context.getLayoutInflater();
         View viewItem = inflater.inflate(R.layout.rate_list_item, null, true);
 
-        Button btn = viewItem.findViewById(R.id.button);
+        Button btn = viewItem.findViewById(R.id.btn1);
 
         btn.setText(listItems.get(i));
 
