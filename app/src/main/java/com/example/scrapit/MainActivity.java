@@ -9,27 +9,27 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
-    private Button LoginButton;
-
+Button b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LoginButton = (Button) findViewById(R.id.LoginButton);
-        LoginButton.setOnClickListener(new View.OnClickListener() {
+        b1=(Button)findViewById(R.id.b1);
+        b2=(Button)findViewById(R.id.b2);
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                openUserDashboard();
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,UserDashboard.class);
+                startActivity(intent);
+
             }
-
-
         });
-
-    }
-    public void openUserDashboard()
-    {
-        Intent intent = new Intent(this, UserDashboard.class);
-        startActivity(intent);
-
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,RegisterUser.class);
+                startActivity(intent);
+            }
+        });
     }
 }
