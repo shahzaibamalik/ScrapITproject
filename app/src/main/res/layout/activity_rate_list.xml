@@ -22,36 +22,38 @@
         android:textSize="35sp"
         android:textStyle="italic"/>
 
-    <ImageView
-        android:id="@+id/btn1"
-        android:layout_width="303dp"
-        android:layout_height="86dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/report" />
+<!--    <ImageView-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="303dp"-->
+<!--        android:layout_height="86dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:background="@drawable/report" />-->
 
-    <TextView
-        android:id="@+id/textViewItemName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Paper"
-        android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/textViewRate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
-        android:text="10/kg"
-        android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="20sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textViewItemName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Paper"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/textViewRate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="45dp"-->
+<!--        android:text="10/kg"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="20sp" />-->
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"/>
+
+        android:id="@+id/listViewRate"
+        android:background="#FFFDFD"/>
 
 
 </LinearLayout>
