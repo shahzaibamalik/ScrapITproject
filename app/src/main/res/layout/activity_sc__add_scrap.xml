@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SC_AddScrap"
+    android:background="#39ff14"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        ></ImageView>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Current Date"
+        android:ems="10"
+        android:clickable="true"
+        android:longClickable="false"
+        android:focusable="false"
+        android:inputType="date"
+        android:textStyle="italic">
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/SC_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"/>
+<!--        android:visibility="gone"-->
+
+    <EditText
+        android:id="@+id/User_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+       />
+
+    <!--android:visibility="gone">-->
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Enter Weight">
+    </EditText>
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Enter Rate">
+
+
+
+    </EditText>
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Amount"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:text="Calculate"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/AddScrap"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:text="Add now"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

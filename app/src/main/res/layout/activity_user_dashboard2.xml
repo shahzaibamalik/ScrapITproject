@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#39ff14"
+    android:orientation="vertical"
+    tools:context=".UserDashboard2">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+
+></TextView>
+
+    <Button
+        android:id="@+id/buttonsellnow"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cash" />
+
+    <Button
+        android:id="@+id/buttonratelist"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rate"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/buttonreport"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/report"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/buttonlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logout"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+
+</LinearLayout>
