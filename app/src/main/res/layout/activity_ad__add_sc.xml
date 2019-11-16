@@ -17,6 +17,18 @@
         ></ImageView>
 
     <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Full Name"
+        android:visibility="gone"
+        android:textStyle="italic">
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -29,26 +41,121 @@
 
     </EditText>
 
+
+
     <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Email Address"
+        android:visibility="gone"
+
+
+        android:inputType="textEmailAddress"
+        android:textStyle="italic">
+
+    </EditText>
+    <EditText
+        android:id="@+id/address"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Home Address"
+        android:textStyle="italic">
+
+    </EditText>
+    <EditText
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#fff"
         android:hint="Password"
 
+
         android:inputType="textPassword"
         android:textStyle="italic">
 
     </EditText>
+    <EditText
+        android:id="@+id/cnic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="CNIC"
+        android:inputType="number"
+        android:textStyle="italic"
+        android:visibility="gone">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Age"
+        android:textStyle="italic"
+        android:visibility="gone">
+
+    </EditText>
+    <EditText
+        android:id="@+id/gender"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Gender"
+        android:textStyle="italic">
+
+    </EditText>
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="role"
+        android:textStyle="italic"
+        android:text="ScrapCollector"
+        android:visibility="gone"
+
+        >
+    </EditText>
+    <EditText
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:hint="status"
+            android:textStyle="italic"
+            android:text="Active"
+        android:visibility="gone"
+            >
+
+    </EditText>
+
+
 
     <Button
+        android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_margin="25dp"
-        android:text="Add Scrap Collector Now"
+        android:text="register now"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
+
 
 
 </LinearLayout>

@@ -17,6 +17,7 @@
         ></ImageView>
 
     <EditText
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -26,6 +27,7 @@
     </EditText>
 
     <EditText
+        android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -39,6 +41,7 @@
     </EditText>
 
     <EditText
+        android:id="@+id/cnic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -54,6 +57,7 @@
 
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -66,6 +70,7 @@
 
     </EditText>
     <EditText
+        android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -75,6 +80,19 @@
 
     </EditText>
     <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:textStyle="italic">
+
+    </EditText>
+    <EditText
+        android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -84,6 +102,7 @@
 
     </EditText>
     <EditText
+        android:id="@+id/gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -93,10 +112,29 @@
 
     </EditText>
     <Button
+        android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_margin="25dp"
         android:text="register now"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:text="Delete"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
