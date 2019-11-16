@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class RegisterUser extends Activity {
     DBhelper databaseHelper ;
-    EditText name, phone ,pass, email;
+    EditText name, phone ,pass, email, address, cnic, age, gender, role, status;
     Button save,delete,update;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,14 @@ public class RegisterUser extends Activity {
         phone = (EditText) findViewById(R.id.edphone);
         pass = (EditText) findViewById(R.id.edpass);
         email = (EditText) findViewById(R.id.edemail);
+        cnic = (EditText) findViewById(R.id.cnic);
+        address = (EditText) findViewById(R.id.address);
+        age = (EditText) findViewById(R.id.age);
+        gender = (EditText) findViewById(R.id.gender);
+        role = (EditText) findViewById(R.id.role);
+        status = (EditText) findViewById(R.id.status);
+
+
 
         save = (Button) findViewById(R.id.save);
         delete = (Button) findViewById(R.id.delete);
@@ -32,10 +40,14 @@ public class RegisterUser extends Activity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean result = databaseHelper.insertContact (name.getText().toString(),Integer.parseInt(phone.getText().toString()),pass.getText().toString() ,email.getText().toString());
+                boolean result = databaseHelper.insertUser (name.getText().toString(),phone.getText().toString(),pass.getText().toString() ,email.getText().toString(),cnic.getText().toString(),address.getText().toString(),age.getText().toString(),gender.getText().toString(),role.getText().toString(),status.getText().toString());
                 if (result)
                 {
                     Toast.makeText(RegisterUser.this, "data inserted", Toast.LENGTH_SHORT).show();
+
+                    Intent intent =new Intent(RegisterUser.this,MainActivity.class);
+                    startActivity(intent);
+
                 }else{
                     Toast.makeText(RegisterUser.this, "data not inserted ", Toast.LENGTH_SHORT).show();
 

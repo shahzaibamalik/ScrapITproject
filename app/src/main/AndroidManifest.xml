@@ -4,31 +4,44 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Updatedata"></activity>
-        <activity android:name=".Deleted" />
-        <activity android:name=".AD_AddItem" >
+        <activity android:name=".SC_Appointments"></activity>
+        <activity android:name=".Reports" />
+        <activity android:name=".UserDashboard2"></activity>
+        <activity android:name=".AD_EmployeeReports" />
+        <activity android:name=".AD_UserReports" />
+        <activity android:name=".AD_AppointmentManagement" />
+        <activity android:name=".AD_ScrapReports" />
+        <activity android:name=".SC_AddScrap" >
 
         </activity>
+        <activity android:name=".SC_MyProfile" />
+        <activity android:name=".MainActivity" ><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".ScrapCollectorDashboard">
+
+
+        </activity>
+        <activity android:name=".ScrapCollectorAdded" />
+        <activity android:name=".AD_UpdateItem" />
+        <activity android:name=".AD_UpdateSC" />
+        <activity android:name=".AppointmentBooked" />
+        <activity android:name=".Updatedata" />
+        <activity android:name=".Deleted" />
+        <activity android:name=".AD_AddItem" />
         <activity android:name=".AD_AddSC" />
         <activity android:name=".SC_Register" />
         <activity android:name=".SellAppointment" />
-        <activity android:name=".RateList" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".UserDashboard" />
-        <activity android:name=".RegisterUser">
-
-        </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".RateList" ></activity>
+        <activity android:name=".RegisterUser" ></activity>
+        <activity android:name=".AdminDashboard" />
     </application>
 
 </manifest>

@@ -67,6 +67,82 @@ android:src="@drawable/logo"
 
     </EditText>
 
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Home Address"
+        android:textStyle="italic"
+        android:visibility="gone">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/cnic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="CNIC"
+        android:inputType="number"
+        android:textStyle="italic"
+        android:visibility="gone">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Age"
+        android:textStyle="italic"
+        android:visibility="gone">
+
+    </EditText>
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="Gender"
+        android:textStyle="italic"
+        android:visibility="gone"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="role"
+        android:textStyle="italic"
+        android:text="User"
+        android:visibility="gone"
+
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="status"
+        android:textStyle="italic"
+        android:text="Active"
+        android:visibility="gone"
+        >
+
+    </EditText>
+
+
     <Button
         android:id="@+id/save"
         android:layout_width="match_parent"

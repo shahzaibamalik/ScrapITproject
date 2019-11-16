@@ -27,7 +27,7 @@ public class Updatedata extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                databaseHelper.updateData(name.getText().toString(),number.getText().toString(),pass.getText().toString(),email.getText().toString());
+//                databaseHelper.updateScData(name.getText().toString(),number.getText().toString(),pass.getText().toString(),email.getText().toString());
 
             }
         });

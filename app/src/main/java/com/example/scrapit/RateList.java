@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.scrapit.adapters.RateListAdapter;
@@ -13,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RateList extends AppCompatActivity {
+
     DBhelper databaseHelper ;
     ListView listView;
     @Override
@@ -21,6 +25,7 @@ public class RateList extends AppCompatActivity {
         setContentView(R.layout.activity_rate_list);
         databaseHelper = new DBhelper(this);
         listView = (ListView) findViewById(R.id.listViewRate);
+
         ArrayList<String> arrayList = new ArrayList<String>();
         Cursor data = databaseHelper.getRateListContents();
 
@@ -32,18 +37,3 @@ public class RateList extends AppCompatActivity {
             listView.setAdapter(arrayAdapter);
         }
     }}
-        //initializeList();
-
-
-//    private void initializeList() {
-//        List<String> items = new ArrayList<>();
-//
-//        items.add("123");
-//        items.add("321");
-//        items.add("456");
-//
-//        ListView list = findViewById(R.id.listViewRate);
-//        list.setAdapter(new RateListAdapter(items, this));
-//
-//    }
-
