@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
     Button btnLogin,b2;
     EditText edt1,edt2;
-    String role;
     DBhelper dbhelper ;
     SharedPreferencesHelper pref;
 
@@ -45,22 +44,12 @@ public class MainActivity extends Activity {
                 startActivity(intent);
                 finish();
 
-                SharedPreferences shareddPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                SharedPreferences.Editor editor1 = shareddPreferences.edit();
-                editor1.putBoolean("isRemember",true);
-                editor1.apply();
-
             }
             if(pref.getAuthData().getRole().equals("ScrapCollector")) {
                 Toast.makeText(MainActivity.this, "Scrap Collector Successfully Login", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, ScrapCollectorDashboard.class);
                 startActivity(intent);
                 finish();
-
-                SharedPreferences shareddPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                SharedPreferences.Editor editor1 = shareddPreferences.edit();
-                editor1.putBoolean("isRemember",true);
-                editor1.apply();
 
             }
         }else{
@@ -90,8 +79,9 @@ public class MainActivity extends Activity {
 
                             SharedPreferences shareddPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
                             SharedPreferences.Editor editor1 = shareddPreferences.edit();
-                            editor1.putBoolean("isRemember",true);
+                              editor1.putBoolean("isRemember",true);
                             editor1.apply();
+
 
                         }
                         if(pref.getAuthData().getRole().equals("Admin")) {
@@ -100,24 +90,12 @@ public class MainActivity extends Activity {
                             startActivity(intent);
                             finish();
 
-                            SharedPreferences shareddPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                            SharedPreferences.Editor editor1 = shareddPreferences.edit();
-                            editor1.putBoolean("isRemember",true);
-                            editor1.apply();
-
-
-
                         }
                         if(pref.getAuthData().getRole().equals("ScrapCollector")) {
                             Toast.makeText(MainActivity.this, "Scrap Collector Successfully Login", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(MainActivity.this, ScrapCollectorDashboard.class);
                             startActivity(intent);
                             finish();
-                            SharedPreferences shareddPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                            SharedPreferences.Editor editor1 = shareddPreferences.edit();
-                            editor1.putBoolean("isRemember",true);
-                            editor1.apply();
-
 
                         }
                     }
@@ -126,7 +104,7 @@ public class MainActivity extends Activity {
                         Toast.makeText(MainActivity.this, "wrong password or phone no", Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
+               }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override

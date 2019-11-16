@@ -66,6 +66,9 @@ public class DBhelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
         db.execSQL("DROP TABLE IF EXISTS " + TABLE1_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE2_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE3_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE4_NAME);
         onCreate(db);
     }
     public boolean insertUser(String name, String phone, String pass, String email, String cnic, String address, String age, String gender, String role, String status)
@@ -234,14 +237,14 @@ public class DBhelper extends SQLiteOpenHelper {
         return data;
     }
 
-    public Cursor getReportListContents()
+    public Cursor getUserReportListContents()
     {
         SQLiteDatabase db=this.getWritableDatabase();
 
 
 
         // Cursor data=db.rawQuery(query,null);
-        Cursor data=db.rawQuery("SELECT * FROM "+TABLE4_NAME,null);
+        Cursor data=db.rawQuery("SELECT * FROM "+TABLE4_NAME ,null);
         return data;
     }
 
@@ -249,9 +252,9 @@ public class DBhelper extends SQLiteOpenHelper {
     {
         SQLiteDatabase db=this.getWritableDatabase();
 
-        
+
         // Cursor data=db.rawQuery(query,null);
-        Cursor data=db.rawQuery("SELECT * FROM "+TABLE4_NAME,null);
+        Cursor data=db.rawQuery("SELECT * FROM "+TABLE4_NAME ,null);
         return data;
     }
 

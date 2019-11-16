@@ -10,37 +10,44 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SC_Appointments"></activity>
-        <activity android:name=".Reports" />
+        <activity android:name=".Reports" ></activity>
         <activity android:name=".UserDashboard2"></activity>
         <activity android:name=".AD_EmployeeReports" />
-        <activity android:name=".AD_UserReports" />
+        <activity android:name=".AD_UserReports" >
+
+        </activity>
         <activity android:name=".AD_AppointmentManagement" />
-        <activity android:name=".AD_ScrapReports" />
+        <activity android:name=".AD_ScrapReports" > </activity>
         <activity android:name=".SC_AddScrap" >
 
         </activity>
-        <activity android:name=".SC_MyProfile" />
-        <activity android:name=".MainActivity" ><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SC_MyProfile" ></activity>
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ScrapCollectorDashboard">
 
 
         </activity>
-        <activity android:name=".ScrapCollectorAdded" />
+        <activity android:name=".ScrapCollectorAdded" ></activity>
         <activity android:name=".AD_UpdateItem" />
         <activity android:name=".AD_UpdateSC" />
         <activity android:name=".AppointmentBooked" />
         <activity android:name=".Updatedata" />
         <activity android:name=".Deleted" />
         <activity android:name=".AD_AddItem" />
-        <activity android:name=".AD_AddSC" />
+        <activity android:name=".AD_AddSC" >
+
+        </activity>
         <activity android:name=".SC_Register" />
         <activity android:name=".SellAppointment" />
-        <activity android:name=".RateList" ></activity>
-        <activity android:name=".RegisterUser" ></activity>
+        <activity android:name=".RateList" >
+            </activity>
+        <activity android:name=".RegisterUser" />
         <activity android:name=".AdminDashboard" />
     </application>
 

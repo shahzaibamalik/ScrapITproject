@@ -22,10 +22,10 @@ public class AD_AddSC extends Activity {
 
         databaseHelper = new DBhelper(this);
 
-        name = (EditText) findViewById(R.id.edname);
-        phone = (EditText) findViewById(R.id.edphone);
-        pass = (EditText) findViewById(R.id.edpass);
-        email = (EditText) findViewById(R.id.edemail);
+        name = (EditText) findViewById(R.id.name);
+        phone = (EditText) findViewById(R.id.phone);
+        pass = (EditText) findViewById(R.id.pass);
+        email = (EditText) findViewById(R.id.email);
         cnic = (EditText) findViewById(R.id.cnic);
         address = (EditText) findViewById(R.id.address);
         age = (EditText) findViewById(R.id.age);
